@@ -1,0 +1,7 @@
+Previsão de Casos de Dengue
+Objetivo: Desenvolver modelos de aprendizado profundo (LSTM, Conv1D) para prever o número de casos de dengue em áreas urbanas.
+Atividades sugeridas:
+• Obter dados públicos (e.g., SINAN, meteorologia) sobre casos de dengue.
+• Criar um pipeline de predição com dados semanais/mensais.
+• Comparar desempenho entre LSTM e Conv1D.
+• Discutir a sensibilidade do modelo às variáveis climáticas.

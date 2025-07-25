@@ -1,0 +1,21 @@
+Problema identificado no dataset original:
+
+    Dados estavam em formato 2D (sem janela temporal).
+
+    Tentativa de uso direto em LSTM/Conv1D gerava erro de shape.
+
+Correção aplicada:
+
+    Implementação de função create_sequences para gerar janelas temporais.
+
+    Aplicação de normalização com MinMaxScaler.
+
+Erro ao usar Conv1D:
+
+    Dimensão temporal insuficiente para múltiplas camadas Conv1D + Pooling.
+
+Soluções testadas:
+
+    Aumentar window_size para permitir convoluções.
+
+    Alternativamente, simplificar arquitetura do Conv1D.
