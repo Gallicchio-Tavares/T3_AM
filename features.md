@@ -47,3 +47,9 @@ Este dicionário é gerado automaticamente durante a criação do dataset, basea
 45. **CASES_LAG_4**: Número de casos reportados
 46. **CASES_LAG_5**: Número de casos reportados
 47. **CASES_LAG_6**: Número de casos reportados
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)

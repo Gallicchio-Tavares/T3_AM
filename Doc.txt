@@ -1,3 +1,9 @@
 Problema identificado no dataset original: Dados estavam em formato 2D (sem janela temporal), mas a análise dizia que era 3D.
 
 Decidi transformar o problema num problema de classificação binaria primeiro já que o dataset é extremamente desbalanceado
+
+"Uma das dicas que eu do, é que você deve rodar a versão final do seu modelo várias vezes 
+com seeds diferentes e coletar o desvio padrão e a média das métricas."
+
+
+NA REGRESSÃO com LSTM, usar o huber como loss function foi melhor que o mse. apliquei tb no Conv1D
