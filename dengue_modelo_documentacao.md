@@ -63,11 +63,9 @@ Prever a quantidade de casos (valor contínuo), **apenas onde há casos (>0)**.
 - Criação de janelas (`window_size = 7`)
 - **Filtragem das janelas com `y > 0`**
 
-### Modelo Conv1D + LSTM (regressão)
+### Modelo Conv1D e LSTM (regressão)
 
-`Input → Conv1D → MaxPooling → Dropout → LSTM → Dense → Saída`
-
-- Loss: `MSE`
+- Loss: `Huber`
 - Métricas: MAE, RMSE, R²
 
 ### Avaliação
@@ -85,11 +83,3 @@ Prever a quantidade de casos (valor contínuo), **apenas onde há casos (>0)**.
 
 ## Próximos passos
 
-1. **Explicabilidade com SHAP**:
-   - Avaliar a importância de cada variável climática na previsão dos casos.
-   - Identificar quais condições estão associadas ao aumento nos casos.
-
-2. **Comparar com modelo Conv1D puro**:
-   - Ver se a LSTM está agregando valor além da convolução.
-
-3. **Opcional**: Regressão com `log(y+1)` para suavizar outliers (picos extremos).
